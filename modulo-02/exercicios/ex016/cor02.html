@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        * { /* Configuarções globais das CSS*/
+            height: 100%
+        }
+        body
+        {
+            /*linear-gradient(to right, blue, lightblue, ...)*/
+            /*linear-gradient(90deg, #5B53C9, FED16E, ...)*/
+            /*radial-gradient(blue, lightblue, ...)*/
+            /*linear-gradient(to right, blue, lightblue, ...)*/
+            background-image: radial-gradient( 
+            #5B54C9,
+            #D92A76, 
+            #FA7D24, 
+            #FED16E
+            );
+            
+            /* background-attachment define se a imagem do fundo scrolla com a página ou se fica estática */
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando gradientes</h1>
+</body>
+</html>

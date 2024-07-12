@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistir vídeos baixados</title>
+</head>
+<body>
+    <h2>Escolha o tipo de vídeo</h2>
+
+    <form id="form1">
+        <input type="radio" name="filetype" id="filetype" value="local">
+        <label for="local">Arquivo local</label>
+        
+        <input type="radio" name="filetype" id="filetype" value="youtube">
+        <label for="Youtube">Link do Youtube</label>
+
+        <input type="button" value="Enviar" onclick="ShowMethod()">
+    </form>
+
+    <div id="player" style="display: none;">
+        <button onclick="LoadVideo(); ShowVideo()">Carregar</button>
+        <input type="file" id="file" name="file">
+        <input type="text" id="filetext">
+    </div>
+
+    <div id="yt" style="display: none;">
+        <input type="text" id="text">
+
+        <iframe 
+            width="735" 
+            height="413" 
+            src="https://www.yout-ube.com/watch?v=m54omTveWa8" 
+            title="Primeiros passos em Tipografia - @Curso em Vídeo HTML5 e CSS3" 
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen
+        ></iframe>
+    </div>
+
+    <video id='video' height="auto" width="auto" controls style="display: none;">Video</video>
+
+    <script text="type/javascript">
+        function ShowMethod()
+        {
+            let f = document.forms['form1']['filetype'].value
+            
+            if (f == 'local')
+            {
+                document.getElementById('player').style.display = 'inherit'
+            }
+            else
+            {
+                document.getElementById('yt').style.display = 'inherit'
+            }
+            document.getElementsByTagName("form").style.display = 'none'
+        }
+
+        function LoadVideo()
+        {
+            vid = document.getElementById("video");
+            txt = document.getElementById("filetext").value;
+            vid.src = txt
+        }
+        
+        function ShowVideo()
+        {
+            document.getElementById('video').style.display = 'inherit'
+
+        }
+    </script>
+</body>
+</html>

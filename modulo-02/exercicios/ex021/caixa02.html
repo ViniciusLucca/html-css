@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body
+        {
+            /* color-scheme: #116434 #008E3B #133A23 #80FFB5 #AAFFCD #D4FFE6 #001309 #cffae1; */
+            background-color: #116434;
+            margin:0;
+            color: #D4FFE6;
+            text-align: justify;
+            font-family: Arial, Helvetica, sans-serif;
+
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+        }
+        p
+        {
+            margin: 0;
+        }
+        img
+        {
+            height: 20%;
+            width: 20%;
+            margin: auto;
+        }
+        header
+        {
+            background-color: #001309;
+            margin-top: 0px;
+            text-align: center;
+            padding: 2%;
+        }
+        header>h1
+        {
+            margin-top: 0;
+            
+        }
+        header>nav
+        {
+            text-align: center;
+        }
+        header>nav>a:hover
+        {
+            text-decoration: 2px underline #D4FFE6;
+        }
+        header>nav>a
+        {
+            margin: 0 34px;
+            color: currentColor;
+            text-decoration: none;
+        }
+        section
+        {
+            margin: 2% 16.37% 2% 16.37%;
+            background-color: #133A23;
+            box-shadow: 0 0 4px black;
+            border-radius: 1%;
+            /* margin: 0 200px; */
+        }
+        
+        article
+        {
+            padding: 3%;
+
+        }
+
+        footer
+        {
+            background-color: #001309;
+            text-align: center;
+            padding: 2% 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+        
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Videos</a>
+            <a href="#">Comics</a>
+            <a href="#">Games</a>
+            <a href="#">Blog</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="welcome">
+            <article id="about-site" class="even">
+                <h2>ABOUT SITE</h2>
+                <p><strong>Lorem ipsum</strong> dolor sit amet, consectetur adipisicing elit. Voluptates, nulla recusandae inventore est illum <em>alias</em> aut dolorem asperiores vel quam laudantium! Cum nostrum architecto eveniet at illo minima eligendi dicta.</p>
+            </article>
+            
+            <article id="about-media" class="odd">
+                <h2>ABOUT MEDIA</h2>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero praesentium placeat, porro sequi voluptates sapiente, fugit adipisci in quo alias distinctio facere recusandae sed ipsum, perferendis laudantium doloremque asperiores hic.
+                <aside><a href="#"><img src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg" alt="blank"></a></aside>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda delectus veniam maiores. Impedit deserunt ex quos ab numquam id, asperiores autem exercitationem provident quasi, quia dicta quibusdam dolorum minus rem!
+            </article><aside>
+                <img src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg" alt="blank">
+            </aside>
+        </section>
+        
+        <section id="how-to-use">
+            <article class="even">
+                <h2>HOW TO USE</h2>
+                <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong> Voluptates, nulla recusandae inventore est illum <em>alias</em> aut dolorem asperiores vel quam laudantium! Cum nostrum architecto eveniet at illo minima eligendi dicta.</p>
+            </article>
+            <aside>
+                <img src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg" alt="blank">
+            </aside>
+            <article id="about-videos" class="odd">
+                <h2>ABOUT VIDEOS</h2>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero praesentium placeat, porro sequi voluptates sapiente, fugit adipisci in quo alias distinctio facere recusandae sed ipsum, perferendis laudantium doloremque asperiores hic.
+                <aside>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</aside>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda delectus veniam maiores. Impedit deserunt ex quos ab numquam id, asperiores autem exercitationem provident quasi, quia dicta quibusdam dolorum minus rem!
+            </article>
+            <article id="about-comics" class="even">
+                <h2>ABOUT COMICS</h2>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero praesentium placeat, porro sequi voluptates sapiente, fugit adipisci in quo alias distinctio facere recusandae sed ipsum, perferendis laudantium doloremque asperiores hic.
+                <aside>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</aside>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda delectus veniam maiores. Impedit deserunt ex quos ab numquam id, asperiores autem exercitationem provident quasi, quia dicta quibusdam dolorum minus rem!
+            </article>
+            <article id="about-games" class="odd">
+                <h2>ABOUT GAMES</h2>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero praesentium placeat, porro sequi voluptates sapiente, fugit adipisci in quo alias distinctio facere recusandae sed ipsum, perferendis laudantium doloremque asperiores hic.
+                <aside>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</aside>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda delectus veniam maiores. Impedit deserunt ex quos ab numquam id, asperiores autem exercitationem provident quasi, quia dicta quibusdam dolorum minus rem!
+            </article>
+            <article id="about-blog" class="even">
+                <h2>ABOUT BLOG</h2>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero praesentium placeat, porro sequi voluptates sapiente, fugit adipisci in quo alias distinctio facere recusandae sed ipsum, perferendis laudantium doloremque asperiores hic.
+                <aside>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</aside>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda delectus veniam maiores. Impedit deserunt ex quos ab numquam id, asperiores autem exercitationem provident quasi, quia dicta quibusdam dolorum minus rem!
+            </article>
+            <article id="about-donations" class="odd">
+                <h2>ABOUT DONATIONS</h2>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero praesentium placeat, porro sequi voluptates sapiente, fugit adipisci in quo alias distinctio facere recusandae sed ipsum, perferendis laudantium doloremque asperiores hic.
+                <aside>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</aside>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda delectus veniam maiores. Impedit deserunt ex quos ab numquam id, asperiores autem exercitationem provident quasi, quia dicta quibusdam dolorum minus rem!
+            </article>
+        </section>
+    </main>
+    <footer>&copy;GaMedia. All rights reserved.</footer>
+</body>
+</html>
