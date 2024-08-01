@@ -15,6 +15,12 @@
     --fonte2: 'Passion One', cursive;
     --fonte3: 'Sriracha', cursive;
 }
+
+html, body
+{
+    min-height: 100vh;
+    font-family: var(--fonte1);
+}
 header, footer
 {
     color: white;
@@ -26,23 +32,32 @@ header h1
 {
     font-family: var(--fonte2);
     font-variant:small-caps;
-    font-size: 10vh;
+    font-size: 10vw;
 
 }
 header p, footer p
 {
     font-family: var(--fonte1);
-    /* font-size: 1em; */
+    font-size: 2vw;
 }
 
 p
 {
     font-family: var(--fonte3);
 }
+a:hover
+{
+    text-decoration: underline white;
+}
+a
+{
+    color: white;
+    text-decoration: none;
+}
 
 section
 {
-    padding: 10vh 4vh;
+    padding: 5vh 4vh;
     font-size: 3.5vw;
 }
 section.imagem
@@ -57,9 +72,10 @@ section.imagem
 
 section.imagem p
 {
-    background-color: rgba(0, 0, 0, 0.432);
+    background-color: rgba(0, 0, 0, 0.575);
     width: max-content;
-    padding: 5px;
+    padding: 10px;
+    text-shadow: 0px 1px 1px rgb(0 0 0 / 88%);
 
 }
 section#img01
@@ -73,6 +89,6 @@ section#img02
 
 footer
 {
-    padding: 10px;
+    padding: 20px;
 
 }
