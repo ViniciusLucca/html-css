@@ -23,13 +23,26 @@
             padding: 5px;
             border: 1px solid black;
         }
+
+        .vermelho
+        {
+            background-color: red;
+        }
+        .amarelo
+        {
+            background-color: yellow;
+        }
     </style>
 </head>
 <body>
     <h1>Exercício de Tabela</h1>
-
     <table>
         <caption>Cadastro</caption>
+        <colgroup>
+            <col class="vermelho">
+            <col class="amarelo" span="2">
+            <col class="vermelho">
+        </colgroup>
         <tr>
             <th scope="col">Nome</th>
             <th scope="col">Sexo</th>
