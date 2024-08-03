@@ -4,6 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas Responsivas</title>
+    <style>
+        table
+        {
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        caption
+        {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        th, td
+        {
+            text-align: center;
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        table > :nth-child(2n)
+        {
+            background-color: lightblue;
+        }
+    </style>
 </head>
 <body>
     <h1>Tabelas em telas pequenas</h1>
