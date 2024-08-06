@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Position Absolute</title>
+    <style>
+        .container {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: lightgray;
+        }
+        .box1, .box2, .box3 {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        .box1 {
+            top: 0;
+            left: 0;
+        }
+        .box2 {
+            top: 50px;
+            left: 50px;
+        }
+        .box3 {
+            top: 100px;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Elementos Absolutos</h1>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>
