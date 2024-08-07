@@ -10,11 +10,11 @@
     <form action="cadastro.php" method="post">
         <p>
             <label for="iusu">Usuário:</label>
-            <input type="text" name="usu" id="iusu" required autocomplete="off">
+            <input type="text" name="usu" id="iusu" required autocomplete="username" placeholder="nome de usuario">
         </p>
         <p>
             <label for="isen">Senha:</label>
-            <input type="password" name="sen" id="isen" required minlength="6">
+            <input type="password" name="sen" id="isen" required minlength="6" placeholder="minimo de 8 letras" autocomplete="current-password">
         </p>
         <p>
             <input type="submit" value="Enviar">
