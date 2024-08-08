@@ -9,13 +9,6 @@
     <h1>Usando Output</h1>
 
     <form action="cadastro.php" method="get">
-        
-        <p>
-            <label for="inum">Número:</label>
-            <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="ival.innerHTML = inum.value">
-            <output id="ival">0</output>
-        </p>
-        
         <p>
             <label for="in1">Número 1</label>
             <input type="number" name="n1" id="in1" min="0" max="50" oninput="isoma.innerHTML = Number(in1.value)+Number(in2.value)" required>
