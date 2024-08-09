@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/* Estilo para impressoras */
+
+*
+{
+    margin:10px;
+    padding:10px;
+}
+
+html
+{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+header{
+    background-color: lightgrey;
+}
+
+header > h1
+{
+    text-align: center;
+}
+
+menu ul
+{
+    list-style-type: none;
+}
+
+menu li
+{
+    background-color: grey;
+    color: white;
+    display:inline-block;
+    padding:10px
+}
+
+article
+{
+    width:600px;
+    display: block;
+    margin:auto;
+}
