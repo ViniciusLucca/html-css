@@ -19,6 +19,23 @@ body
     background-color: lightgray;
 }
 
+@media screen and (max-width:768px)
+{
+    menu
+    {
+        display: none;
+    }   
+}
+
+
+menu ul
+{
+    list-style-type: none;
+}
+menu > ul > li > a
+{
+    display: block;
+}
 header
 {
     background-color: grey;
@@ -33,10 +50,11 @@ header h1
 header li
 {
     background-color: black;
-    margin-bottom: 2px;
+    /* margin-bottom: 2px; */
     padding: 15px;
     text-align:center;
-
+    border: 1px solid rgb(70, 68, 68);
+    
 }
 header a 
 {
@@ -46,9 +64,10 @@ header a
 main
 {
     background-color: white;
-    width: 250px;
-    margin:auto;
-    padding: 20px
+    width: 80vw;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 3px;
 }
 
 article h1
@@ -59,4 +78,20 @@ article h1
 p
 {
     margin-bottom: 15px;
+}
+
+#burguer
+{
+    background-color: rgb(39, 39, 39);
+    display: block;
+    color:white;
+    padding:10px;
+    text-align: center;
+    cursor:pointer;
+}
+
+@media screen and (min-width:768px)
+{
+    #burguer{display: none;}
+    menu{display: block;}
 }
