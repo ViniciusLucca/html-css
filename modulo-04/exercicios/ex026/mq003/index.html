@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <style>
+        /* declarações gerais */
+        *
+        {
+            margin:0px;
+            padding:0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html, body
+        {
+            width: 100vw;
+            height: 100vh;
+            background-color: #233eff;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        h1
+        {
+            color: white;
+            text-shadow:2px 2px 0px #1526a7;
+            padding: 10px;
+        }
+
+        /* declarações retrato */
+        @media screen and (orientation: portrait)
+        {
+            body
+            {
+                background-image: url(../imagens/cev-portrait.jpg);
+                background-position: center bottom;
+            }
+        }
+        /* declarações paisagem */
+        @media screen and (orientation: landscape)
+        {
+            body
+            {
+                background-image: url(../imagens/cev-landscape.jpg);
+                background-position: center bottom;
+            }
+        }
+    </style>
+    <title>Media Query</title>
+</head>
+<body>
+    <header>
+        <h1>Notícias</h1>
+        <menu>
+
+
+        </menu>
+    </header>
+
+    <main>
+        <article>
+            <h2>Estou aprendendo a criar Media Queries</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, corporis fugiat? Ducimus, impedit quis! Dolorem molestias nisi eaque aspernatur tempore accusantium! Fugiat optio quibusdam quos fugit nisi, ex repudiandae nulla? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laudantium, voluptas alias distinctio quae iusto voluptate exercitationem commodi consequatur? At velit consequatur possimus placeat quos, eveniet laudantium cumque officia laboriosam!</p>
+            
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, corporis fugiat? Ducimus, impedit quis! Dolorem molestias nisi eaque aspernatur tempore accusantium! Fugiat optio quibusdam quos fugit nisi, ex repudiandae nulla? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laudantium, voluptas alias distinctio quae iusto voluptate exercitationem commodi consequatur? At velit consequatur possimus placeat quos, eveniet laudantium cumque officia laboriosam!</p>
+            
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, corporis fugiat? Ducimus, impedit quis! Dolorem molestias nisi eaque aspernatur tempore accusantium! Fugiat optio quibusdam quos fugit nisi, ex repudiandae nulla? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laudantium, voluptas alias distinctio quae iusto voluptate exercitationem commodi consequatur? At velit consequatur possimus placeat quos, eveniet laudantium cumque officia laboriosam!</p>
+        </article>
+    </main>
+</body>
+</html>
