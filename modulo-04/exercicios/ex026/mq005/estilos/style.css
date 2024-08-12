@@ -19,15 +19,6 @@ body
     background-color: lightgray;
 }
 
-@media screen and (max-width:768px)
-{
-    menu
-    {
-        display: none;
-    }   
-}
-
-
 menu ul
 {
     list-style-type: none;
@@ -41,7 +32,6 @@ header
     background-color: grey;
     color: white;
 }
-
 header h1
 {
     padding: 15px;
@@ -64,7 +54,7 @@ header a
 main
 {
     background-color: white;
-    width: 80vw;
+    width: 65vw;
     margin: 20px auto;
     padding: 20px;
     border-radius: 3px;
@@ -88,10 +78,4 @@ p
     padding:10px;
     text-align: center;
     cursor:pointer;
-}
-
-@media screen and (min-width:768px)
-{
-    #burguer{display: none;}
-    menu{display: block;}
 }
