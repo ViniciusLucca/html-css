@@ -1,43 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Media Queries</title>
-        <link rel="stylesheet" href="estilos/style.css">
-        <link rel="stylesheet" href="estilos/media-queries.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        
-    </head>
-    <body>
-        <header>
-            <h1>Meu website</h1>
-            <span 
-                class="material-icons" 
-                id="burguer" 
-                onclick=
-                "
-                mnu = document.getElementsByTagName('menu')[0];
-                if(mnu.style.display == 'block')
-                {
-                    mnu.style.display = 'none';
-                }
-                else
-                {
-                    mnu.style.display = 'block';
-                }
-                "
-                >menu
-            </span>
-        <menu>
-            <ul>
-                <li><a href="#">Opção 1</a></li>
-                <li><a href="#">Opção 2</a></li>
-                <li><a href="#">Opção 3</a></li>
-                <li><a href="#">Opção 4</a></li>
-                <li><a href="#">Opção 5</a></li>
-            </ul>
-        </menu>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-queries.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body onresize="mudarTamanho()">
+    <header>
+        <h1>Meu website</h1>
+        <span class="material-icons" id="burguer" onclick="toggleMenu()">menu
+    </span>
+    <menu>
+        <ul>
+            <li><a href="#">Opção 1</a></li>
+            <li><a href="#">Opção 2</a></li>
+            <li><a href="#">Opção 3</a></li>
+            <li><a href="#">Opção 4</a></li>
+            <li><a href="#">Opção 5</a></li>
+        </ul>
+    </menu>
     </header>
     <main>
         <h2>Testando Media Queries</h2>
@@ -62,5 +46,32 @@
             </p>
         </article>
     </main>
-    </body>
+    <script type="text/javascript">
+        mnu = document.getElementsByTagName('menu')[0];
+
+        function mudarTamanho()
+        {
+            if(window.innerWidth > 768)
+            {
+                mnu.style.display = 'block';
+            }
+            else
+            {
+                mnu.style.display = 'none';
+            }
+        }
+
+        function toggleMenu() {
+            if(mnu.style.display == 'block')
+            {
+                mnu.style.display = 'none';
+            }
+            else
+            {
+                mnu.style.display = 'block';
+            }     
+        }
+    </script>
+</body>
+
 </html>
