@@ -11,10 +11,7 @@
             display:flex;
             /* flex-direction: row-reverse;
             flex-wrap: wrap; */
-            flex-flow: row wrap;
-            align-items: center;
-            height: 15%;
-            position:absolute;
+            flex-flow: row nowrap;
         }
 
         div.item
@@ -22,10 +19,10 @@
             background-color: lightskyblue;
             border: 1px solid black;
             text-align: center;
-            padding: 20px;
+            flex-basis: 150px;
         }
 
-        div#i1
+        /* div#i1
         {
             align-self: auto;
         }
@@ -53,7 +50,7 @@
         {
             align-self: flex-start;
         }
-        /* div#i8
+        div#i8
         {
             align-self: flex-start;
         }
@@ -86,18 +83,14 @@
     <input type="button" name="button" id="ibutton" onclick="resetStyle()" value="Reiniciar">
 
     <div class="container">
-        <div class="item" id="i1">1</div>
-        <div class="item" id="i2">2</div>
-        <div class="item" id="i3">3</div>
-        <div class="item" id="i4">4</div>
-        <div class="item" id="i5">5</div>
-        <div class="item" id="i6">6</div>
-        <div class="item" id="i7">7</div> 
-        <!-- <div class="item" id="i8">8</div> 
-        <div class="item" id="i9">9</div> 
-        <div class="item" id="i10">10</div> 
-        <div class="item" id="i11">11</div> 
-        <div class="item" id="i12">12</div>  -->
+        <div class="item" id="i1">a</div>
+        <div class="item" id="i2">Outro conteúdo</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">Conteúdo um pouco maior</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i5">Conteúdo maior ainda que vai ocupar mais espaço.</div>
+        <div class="item" id="i5">G</div>
+
     </div>
 
     <script type="text/javascript">
