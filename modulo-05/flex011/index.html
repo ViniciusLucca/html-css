@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container
+        {
+            background-color: lightsalmon;
+            display:flex;
+            /* flex-direction: row-reverse;
+            flex-wrap: wrap; */
+            flex-flow: row nowrap;
+        }
+
+        div.item
+        {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            vertical-align: middle;
+            flex-basis: 200px;
+        }
+
+         div#i1
+        {
+            flex-shrink: 1;
+            flex-grow:0;
+        }
+        div#i2
+        {
+            flex-shrink: 1;
+            flex-grow:2;
+        }
+        div#i3
+        {
+            flex-shrink: 1;
+            flex-grow:4;
+        }
+        /*div#i4
+        {
+            align-self: center;
+        }
+        div#i5
+        {
+            align-self: stretch;
+        }
+        div#i6
+        {
+            align-self: flex-start;
+        }
+        div#i7
+        {
+            align-self: flex-start;
+        }
+        div#i8
+        {
+            align-self: flex-start;
+        }
+        div#i9
+        {
+            align-self: flex-start;
+        }
+        div#i10
+        {
+            align-self: flex-start;
+        }
+        div#i11
+        {
+            align-self: flex-start;
+        }
+        div#i12
+        {
+            align-self: flex-start;
+        } */
+
+    </style>
+</head>
+<body>
+    <label for="inumber">Height</label>
+    <input type="number" name="number" id="inumber" min="60" step="10" max="700" oninput="setHeight()">
+    <br>
+    <label for="inumber2">Width</label>
+    <input type="number" name="number" id="inumber2" min="40" step="10" max="900" oninput="setWidth()">
+    <br>
+    <input type="button" name="button" id="ibutton" onclick="resetStyle()" value="Reiniciar">
+
+    <div class="container">
+        <div class="item" id="i1"><p>1</p></div>
+        <div class="item" id="i2"><p>2</p></div>
+        <div class="item" id="i3"><p>3</p></div>
+    </div>
+
+    <script type="text/javascript">
+        function setWidth()
+        {
+            document.getElementsByClassName('container')[0].style.width = inumber2.value + 'px';
+        }
+        
+        function setHeight()
+        {
+            document.getElementsByClassName('container')[0].style.height = inumber.value + 'px';
+        }
+
+        function resetStyle()
+        {
+            document.getElementsByClassName('container')[0].style.width = 'auto';
+            document.getElementsByClassName('container')[0].style.height = 'auto';
+            inumber.value = '', inumber2.value = '';
+        }
+    </script>
+</body>
+</html>
